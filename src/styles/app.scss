@@ -1,0 +1,13 @@
+@import "./normalize.scss";
+
+body {
+  height: fit-content;
+  overflow-x: hidden;
+  background: linear-gradient(
+    127.7deg,
+    #001a18 0%,
+    #000000 49.48%,
+    #003330 100%
+  );
+  color: white;
+}

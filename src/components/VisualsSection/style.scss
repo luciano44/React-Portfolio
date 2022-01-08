@@ -1,0 +1,18 @@
+.visuals-section {
+  margin: 50px auto;
+  max-width: 800px;
+
+  .visual {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    img {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 15px;
+      width: 90%;
+      margin-bottom: 30px;
+    }
+  }
+}

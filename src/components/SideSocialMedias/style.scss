@@ -1,0 +1,33 @@
+.side-social-medias {
+  position: fixed;
+  top: 10vh;
+  left: -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  width: 40px;
+  z-index: 9999;
+  backdrop-filter: blur(5px);
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 3px;
+  width: 100%;
+  height: 30px;
+  // border-radius: 0 10px 10px 0;
+  background: rgba(255, 255, 255, 0.15);
+  transition: 0.15s;
+
+  &:hover {
+    margin-left: 10px;
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  img {
+    width: 18px;
+    margin-right: 5px;
+  }
+}

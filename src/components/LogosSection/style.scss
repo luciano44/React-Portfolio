@@ -1,0 +1,26 @@
+.logos-section {
+  margin: 50px auto;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  .logo {
+    display: flex;
+    flex: 1 1 150px;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    background: rgba(255, 255, 255, 0.05);
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+
+    img {
+      height: 85%;
+    }
+  }
+  .filler {
+    padding: 0;
+    height: 0;
+  }
+}

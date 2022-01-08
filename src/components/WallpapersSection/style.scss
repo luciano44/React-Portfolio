@@ -1,0 +1,17 @@
+.wallpapers-section {
+  margin: 50px auto;
+  max-width: 800px;
+
+  .wallpaper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    img {
+      border: 15px solid rgba(255, 255, 255, 0.05);
+      width: 90%;
+      margin-bottom: 30px;
+    }
+  }
+}

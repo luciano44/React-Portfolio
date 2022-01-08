@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import "../../styles/mixins.scss";
+
+.section-technologies {
+  @include flexCenter;
+  position: relative;
+  max-width: 800px;
+  padding: 50px 10px 10px 10px;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    height: 1px;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .text {
+    font-family: "Roboto", sans-serif;
+    filter: opacity(0.75);
+    white-space: nowrap;
+  }
+
+  .technologies {
+    @include flexCenter;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-basis: 465px;
+    padding: 0;
+    margin-left: 15px;
+    .technology {
+      list-style: none;
+      margin: 5px;
+      height: 35px;
+      @include flexCenter;
+      flex-shrink: 1;
+      flex-basis: 55px;
+
+      img {
+        height: 100%;
+      }
+    }
+    .filler {
+      display: flex;
+      flex-grow: 1;
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .section-technologies {
+    flex-direction: column;
+    .technologies {
+      flex-basis: unset;
+    }
+  }
+}
