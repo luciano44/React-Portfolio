@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.scss";
 
 import Cards from "../../img/visuals/cards.png";
 import Discussion from "../../img/visuals/discussion.png";
 
-function WallpapersSection() {
+import { fadeToTop } from "../../scripts/fadeToTop";
+
+function VisualsSection() {
+  useEffect(() => {
+    fadeToTop(".visuals-section");
+  }, []);
+
   return (
     <div className="visuals-section">
       <div className="visual">
@@ -17,4 +23,4 @@ function WallpapersSection() {
   );
 }
 
-export default WallpapersSection;
+export default VisualsSection;

@@ -3,16 +3,23 @@ import MainSectionHeader from "../MainSectionHeader";
 import SectionText from "../SectionText";
 import SectionTechnologies from "../SectionTechnologies";
 import SectionProjects from "../SectionProjects";
+import { fadeToTop } from "../../scripts/fadeToTop";
 
-import React from "react";
+import React, { useEffect } from "react";
 
 function Section() {
+  useEffect(() => {
+    fadeToTop(".main-section");
+  }, []);
+
   return (
     <>
       <MainSectionHeader />
-      <SectionText />
-      <SectionTechnologies />
-      <SectionProjects />
+      <div className="main-section">
+        <SectionText />
+        <SectionTechnologies />
+        <SectionProjects />
+      </div>
     </>
   );
 }

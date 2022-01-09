@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.scss";
 
 import logo1 from "../../img/logos/logo1.svg";
@@ -12,7 +12,13 @@ import logo8 from "../../img/logos/logo8.svg";
 import logo9 from "../../img/logos/logo9.svg";
 import logo10 from "../../img/logos/logo10.svg";
 
+import { fadeToTop } from "../../scripts/fadeToTop";
+
 function LogosSection() {
+  useEffect(() => {
+    fadeToTop(".logos-section");
+  }, []);
+
   return (
     <div className="logos-section">
       <div className="logo">
