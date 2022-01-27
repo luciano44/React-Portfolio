@@ -23,11 +23,14 @@ function Header() {
     txt.style.opacity = "1";
     txt.style.top = "0px";
     img.style.opacity = "1";
-    img.style.top = "0px";
+    img.style.top = "-0px";
 
     setTimeout(() => {
+      logoText.style.transform = "scale(1.1)";
+    }, 1150);
+    setTimeout(() => {
       logoText.style.transform = "scale(1)";
-    }, 750);
+    }, 1250);
   }, []);
 
   return (
